@@ -65,7 +65,7 @@ export default class TickersScreen extends React.Component<Props> {
     if (!this.tickers.length)
       return <ActivityIndicator />
 
-    const rows: Array<ListItem> = this.tickers.map((ticker: ticker) => {
+    const rows: Array<ListItem> = this.tickers.map((ticker: TickerType) => {
       return (
         <ListItem key={ticker.code}>
           <Ticker ticker={ticker} />
